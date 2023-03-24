@@ -43,6 +43,8 @@
 #### 2. The target performance of 75% was not achieved.
 
 #### 3.  The optimization was done through the Keras_tuner library which allowed for the model to determine the number of neurons (1-30) and option of activation function (relu, tanh, and sigmoid) in the first and hidden layers.  The output layer's activation function was sigmoid, as that is the standard choice.  The Keras_tuner was unable to find a model that did better than 75%
+![Top_3_hyperparameters](https://user-images.githubusercontent.com/115171651/227627884-7cba5f0c-f0cf-444c-816f-dcb6a7bf6e31.png)
+![Top_model_dataset](https://user-images.githubusercontent.com/115171651/227627897-a36bc144-dd4c-4895-b372-91304e83927c.png)
 
 
 ## Summary:
