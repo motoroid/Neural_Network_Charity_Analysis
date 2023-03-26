@@ -38,16 +38,17 @@
 
 ### Compiling, Training, and Evaluating the Model
 
-#### 1. The number of neurons in the first and second layers were 80 and 30 respectively.  The number of input dimensions was the length of the features in the table.  As relu is less prone to vanishing gradient problems it was chosen.  
+#### 1. The number of neurons in the first and second layers were 80 and 30 respectively.  The number of input dimensions was the length of the features in the table.  As relu is less prone to vanishing gradient problems it was chosen.
 
 #### 2. The target performance of 75% was not achieved.
 
 #### 3.  The optimization was done through the Keras_tuner library which allowed for the model to determine the number of neurons (1-30) and option of activation function (relu, tanh, and sigmoid) in the first and hidden layers.  The output layer's activation function was sigmoid, as that is the standard choice.  The Keras_tuner was unable to find a model that did better than 75%
+
 ![Top_3_hyperparameters](https://user-images.githubusercontent.com/115171651/227627884-7cba5f0c-f0cf-444c-816f-dcb6a7bf6e31.png)
 ![Top_model_dataset](https://user-images.githubusercontent.com/115171651/227627897-a36bc144-dd4c-4895-b372-91304e83927c.png)
 
-
 ## Summary:
 
-There is a summary of the results (2 pt)
-There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
+### The Keras Tuner was unable to find a model that had better than 72.6% accuracy with a loss of 0.5532.  With such a low accuracy and high loss the modeling was unsuccessful and should be optimized prior to using this to predict what charity should be invested in to determine if it would be successful or not.  
+
+### The recommendation would be to run the data using the Random Forest classifier model.  The reason is that by ranking the features by importance it may be easier to remove the ones that have less effect.
